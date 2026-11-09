@@ -1,0 +1,121 @@
+(defcfg 
+  process-unmapped-keys yes	
+  notify-error  yes  
+)
+
+(defsrc
+  1    2    3    4    5    6    7    8    9    0    [
+  q    w    e    r    t    y    u    i    o    p
+  caps a    s    d    f    g    h    j    k    l    ;    '
+  c    v    b    n    m    spc
+)
+
+(defvirtualkeys
+  ;; Virtual key that activates a macro
+  vkmacro (macro h e l l o spc w o r l d)
+)
+
+(defvar
+  tap-time 150
+  hold-time 200
+  long-time 250
+
+  ;; Mouse settings
+  scr-t 50
+  scr-d 120
+  ms-t 10
+  ms-at 800
+  ms-min 3
+  ms-max 25
+)
+
+(defalias
+  ;; ==========================================
+  ;; Base layer aliases (Home-Row Mods)
+  ;; ==========================================
+  esccaps (tap-hold $tap-time $hold-time esc caps)
+  almet   (tap-hold $tap-time $hold-time a lmet)
+  salt    (tap-hold $tap-time $hold-time s lalt)
+  dshift  (tap-hold 150 140 d lshift)
+  fctrl   (tap-hold $tap-time $hold-time f lctrl)
+  jctrl   (tap-hold $tap-time $hold-time j lctrl)
+  kshift  (tap-hold 150 140 k lshift)
+  lalt    (tap-hold $tap-time $hold-time l lalt)
+  ;lmet   (tap-hold $tap-time $hold-time ; lmet)
+
+  ;; Spacebar: tap for space, hold to activate layer-one
+  spc     (tap-hold $tap-time $hold-time spc (layer-while-held layer-one))
+
+  ;; ==========================================
+  ;; Layer One aliases (Space Layer)
+  ;; ==========================================
+  caps1 (tap-hold $tap-time 500 ret caps)
+  a1    (tap-hold $tap-time $hold-time 1 lsft)
+  s1    (tap-hold $tap-time $long-time 2 lmet)
+  d1    (tap-hold $tap-time $hold-time 3 lctl)
+  f1    (tap-hold $tap-time $hold-time 4 4)
+  g1    (tap-hold $tap-time $hold-time 5 ret)
+  h1    (tap-hold $tap-time $hold-time left left)
+  j1    (tap-hold $tap-time $hold-time down down) 
+  k1    (tap-hold $tap-time $hold-time up up)
+  l1    (tap-hold $tap-time $long-time rght rght)
+  
+  ;; Space + ; in Layer One switches to layer-two (Mouse Layer)
+  to-l2 (layer-switch layer-two)
+  
+  spc1  (tap-hold $tap-time $hold-time bspc bspc)
+
+  q1    (tap-hold $tap-time $hold-time q 9)
+  w1    (tap-hold $tap-time $hold-time w 0)
+  e1    (tap-hold $tap-time $hold-time esc esc)
+  r1    (tap-hold $tap-time $hold-time ; r)
+  t1    (tap-hold $tap-time $hold-time home home)
+  y1    (tap-hold $tap-time $hold-time end end)
+  u1    (tap-hold $tap-time $hold-time lbrc lbrc)
+  i1    (tap-hold $tap-time $hold-time rbrc rbrc)
+  o1    (tap-hold $tap-time $hold-time min min)
+  p1    (tap-hold $tap-time $hold-time eql eql)
+
+  c1    C-c
+  v1    C-v
+  b1    bspc
+  n1    del
+  m1    m
+
+  ;; ==========================================
+  ;; Layer Two aliases (Mouse Layer)
+  ;; ==========================================
+  ;; ; in Layer Two switches back to base layer
+  to-base (layer-switch base)
+
+  ;; Mouse movement with acceleration
+  m-up    (movemouse-accel-up $ms-t $ms-at $ms-min $ms-max)
+  m-down  (movemouse-accel-down $ms-t $ms-at $ms-min $ms-max)
+  m-left  (movemouse-accel-left $ms-t $ms-at $ms-min $ms-max)
+  m-rght  (movemouse-accel-right $ms-t $ms-at $ms-min $ms-max)
+
+  ;; Mouse scroll wheel
+  m-whu   (mwheel-up $scr-t $scr-d)
+  m-whd   (mwheel-down $scr-t $scr-d)
+)
+
+(deflayer base
+  1    2    3    4    5    6    7    8    9    0    [
+  q    w    e    r    t    y    u    i    o    p
+  @esccaps @almet @salt @dshift @fctrl g h @jctrl @kshift @lalt @;lmet '
+  c    v    b    n    m    @spc
+)
+
+(deflayer layer-one
+  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11
+  @q1  @w1  @e1  @r1  @t1  @y1  @u1  @i1  @o1  @p1
+  @caps1 @a1 @s1 @d1 @f1 @g1 @h1 @j1 @k1 @l1 @to-l2 f12
+  @c1  @v1  @b1  @n1  @m1  @spc1
+)
+
+(deflayer layer-two
+  _    _    _    _    _    _    _    _    _    _    _
+  _    @m-whu @m-up @m-whd _   _    _    _    _    _
+  _    _    @m-left @m-down @m-rght _ mmid mlft mrgt _ @to-base _
+  @c1  @v1  bspc @n1  @m1  _
+)

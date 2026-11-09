@@ -1,0 +1,6 @@
+# Temporary & backup files
+*.tmp
+*~
+test_*.kbd
+.DS_Store
+Thumbs.db
