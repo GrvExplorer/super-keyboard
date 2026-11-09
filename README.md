@@ -41,7 +41,7 @@ Repetitive strain injury (RSI), wrist pain, and slow typing often stem from two 
 > **Tap** a key to type normally. **Hold** any home-row key to activate system modifiers.
 
 <p align="center">
-  <img src="assets/layer-0-base.png" alt="Base Layer: Home Row Mods" width="860">
+  <img src="assets/layer-0-base.svg" alt="Base Layer: Home Row Mods" width="860">
 </p>
 
 | Key | Tap | Hold (When pressed with other keys) |
@@ -59,7 +59,7 @@ Repetitive strain injury (RSI), wrist pain, and slow typing often stem from two 
 > Hold **`Spacebar`** to activate. Gives instant access to Vim arrows, brackets, math symbols, numbers, and Function keys (`F1`–`F12`).
 
 <p align="center">
-  <img src="assets/layer-1-space.png" alt="Layer One: Navigation, Numbers & F-Keys" width="860">
+  <img src="assets/layer-1-space.svg" alt="Layer One: Navigation, Numbers & F-Keys" width="860">
 </p>
 
 * **Vim Navigation**: `H` (Left ◄), `J` (Down ▼), `K` (Up ▲), `L` (Right ►).
@@ -82,7 +82,7 @@ Repetitive strain injury (RSI), wrist pain, and slow typing often stem from two 
 > Enter with **`Space + ;`**. Once entered, you can let go of all keys—your hands are completely free to navigate without holding any buttons.
 
 <p align="center">
-  <img src="assets/layer-2-mouse.png" alt="Layer Two: Hands-Free Mouse Controller" width="860">
+  <img src="assets/layer-2-mouse.svg" alt="Layer Two: Hands-Free Mouse Controller" width="860">
 </p>
 
 * **Smooth Cursor Acceleration (Left Hand Inverted-T)**:
