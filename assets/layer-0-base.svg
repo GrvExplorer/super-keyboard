@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 370" width="100%" height="100%">
+  <defs>
+    <filter id="glow-orange" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#f97316" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#38bdf8" flood-opacity="0.55"/>
+    </filter>
+    <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#22c55e" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#c084fc" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#ef4444" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+  <rect width="880" height="370" rx="16" fill="#0c0d10" stroke="#1f232d" stroke-width="1.5"/>
+  
+    <text x="440" y="38" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#f59e0b">
+      hold layer: <tspan fill="#38bdf8" font-size="16" font-weight="500"> (orange = hold modifiers, blue = layer key)</tspan>
+    </text>
+    
+<rect x="35.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="61.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">` ~</text>
+<rect x="93.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="119.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">1</text>
+<rect x="151.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="177.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">2</text>
+<rect x="209.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="235.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">3</text>
+<rect x="267.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="293.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">4</text>
+<rect x="325.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="351.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">5</text>
+<rect x="383.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="409.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">6</text>
+<rect x="441.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="467.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">7</text>
+<rect x="499.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="525.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">8</text>
+<rect x="557.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="583.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">9</text>
+<rect x="615.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="641.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">0</text>
+<rect x="673.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="699.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">- _</text>
+<rect x="731.0" y="65.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="757.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">= +</text>
+<rect x="789.0" y="65.0" width="95.5" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="836.8" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">bspc</text>
+<rect x="35.0" y="119.0" width="81.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="75.5" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">tab</text>
+<rect x="122.0" y="119.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="148.0" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">Q</text>
+<rect x="180.0" y="119.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="206.0" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">W</text>
+<rect x="238.0" y="119.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="264.0" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">E</text>
+<rect x="296.0" y="119.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="322.0" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">R</text>
+<rect x="354.0" y="119.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="380.0" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">T</text>
+<rect x="412.0" y="119.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="438.0" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">Y</text>
+<rect x="470.0" y="119.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="496.0" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">U</text>
+<rect x="528.0" y="119.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="554.0" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">I</text>
+<rect x="586.0" y="119.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="612.0" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">O</text>
+<rect x="644.0" y="119.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="670.0" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">P</text>
+<rect x="702.0" y="119.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="728.0" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">[ {</text>
+<rect x="760.0" y="119.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="786.0" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">] }</text>
+<rect x="818.0" y="119.0" width="66.5" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="851.2" y="148.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">\ |</text>
+<rect x="35.0" y="173.0" width="95.5" height="48.0" rx="9" ry="9" fill="#2a170b" stroke="#f97316" stroke-width="2.2" filter="url(#glow-orange)"/>
+<text x="82.8" y="192.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffedd5">esc</text>
+<text x="82.8" y="209.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#f97316">caps</text>
+<rect x="136.5" y="173.0" width="52.0" height="48.0" rx="9" ry="9" fill="#2a170b" stroke="#f97316" stroke-width="2.2" filter="url(#glow-orange)"/>
+<text x="162.5" y="192.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffedd5">A</text>
+<text x="162.5" y="209.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#f97316">WIN</text>
+<rect x="194.5" y="173.0" width="52.0" height="48.0" rx="9" ry="9" fill="#2a170b" stroke="#f97316" stroke-width="2.2" filter="url(#glow-orange)"/>
+<text x="220.5" y="192.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffedd5">S</text>
+<text x="220.5" y="209.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#f97316">ALT</text>
+<rect x="252.5" y="173.0" width="52.0" height="48.0" rx="9" ry="9" fill="#2a170b" stroke="#f97316" stroke-width="2.2" filter="url(#glow-orange)"/>
+<text x="278.5" y="192.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffedd5">D</text>
+<text x="278.5" y="209.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#f97316">SHIFT</text>
+<rect x="310.5" y="173.0" width="52.0" height="48.0" rx="9" ry="9" fill="#2a170b" stroke="#f97316" stroke-width="2.2" filter="url(#glow-orange)"/>
+<text x="336.5" y="192.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffedd5">F</text>
+<text x="336.5" y="209.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#f97316">CTRL</text>
+<rect x="368.5" y="173.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="394.5" y="202.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">G</text>
+<rect x="426.5" y="173.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="452.5" y="202.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">H</text>
+<rect x="484.5" y="173.0" width="52.0" height="48.0" rx="9" ry="9" fill="#2a170b" stroke="#f97316" stroke-width="2.2" filter="url(#glow-orange)"/>
+<text x="510.5" y="192.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffedd5">J</text>
+<text x="510.5" y="209.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#f97316">CTRL</text>
+<rect x="542.5" y="173.0" width="52.0" height="48.0" rx="9" ry="9" fill="#2a170b" stroke="#f97316" stroke-width="2.2" filter="url(#glow-orange)"/>
+<text x="568.5" y="192.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffedd5">K</text>
+<text x="568.5" y="209.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#f97316">SHIFT</text>
+<rect x="600.5" y="173.0" width="52.0" height="48.0" rx="9" ry="9" fill="#2a170b" stroke="#f97316" stroke-width="2.2" filter="url(#glow-orange)"/>
+<text x="626.5" y="192.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffedd5">L</text>
+<text x="626.5" y="209.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#f97316">ALT</text>
+<rect x="658.5" y="173.0" width="52.0" height="48.0" rx="9" ry="9" fill="#2a170b" stroke="#f97316" stroke-width="2.2" filter="url(#glow-orange)"/>
+<text x="684.5" y="192.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffedd5">;</text>
+<text x="684.5" y="209.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#f97316">WIN</text>
+<rect x="716.5" y="173.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="742.5" y="202.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">' "</text>
+<rect x="774.5" y="173.0" width="110.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="829.5" y="202.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">enter</text>
+<rect x="35.0" y="227.0" width="124.5" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="97.2" y="256.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">shift</text>
+<rect x="165.5" y="227.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="191.5" y="256.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">Z</text>
+<rect x="223.5" y="227.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="249.5" y="256.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">X</text>
+<rect x="281.5" y="227.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="307.5" y="256.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">C</text>
+<rect x="339.5" y="227.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="365.5" y="256.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">V</text>
+<rect x="397.5" y="227.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="423.5" y="256.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">B</text>
+<rect x="455.5" y="227.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="481.5" y="256.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">N</text>
+<rect x="513.5" y="227.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="539.5" y="256.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">M</text>
+<rect x="571.5" y="227.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="597.5" y="256.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">, <</text>
+<rect x="629.5" y="227.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="655.5" y="256.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">. ></text>
+<rect x="687.5" y="227.0" width="52.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="713.5" y="256.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">/ ?</text>
+<rect x="745.5" y="227.0" width="139.0" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="815.0" y="256.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">shift</text>
+<rect x="35.0" y="281.0" width="66.5" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="68.2" y="310.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">ctrl</text>
+<rect x="107.5" y="281.0" width="66.5" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="140.8" y="310.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">super</text>
+<rect x="180.0" y="281.0" width="66.5" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="213.2" y="310.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">alt</text>
+<rect x="252.5" y="281.0" width="356.5" height="48.0" rx="9" ry="9" fill="#0f2338" stroke="#38bdf8" stroke-width="2.2" filter="url(#glow-blue)"/>
+<text x="430.8" y="300.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#e0f2fe">space</text>
+<text x="430.8" y="317.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#38bdf8">hold: Layer 1</text>
+<rect x="615.0" y="281.0" width="66.5" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="648.2" y="310.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">alt</text>
+<rect x="687.5" y="281.0" width="66.5" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="720.8" y="310.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">super</text>
+<rect x="760.0" y="281.0" width="66.5" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="793.2" y="310.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">menu</text>
+<rect x="832.5" y="281.0" width="66.5" height="48.0" rx="9" ry="9" fill="#161517" stroke="#33302d" stroke-width="1.2" />
+<text x="865.8" y="310.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6e6863">ctrl</text>
+</svg>

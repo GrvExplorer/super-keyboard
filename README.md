@@ -1,270 +1,230 @@
-# ⚡ super-keyboard: Advanced Kanata Configuration
+<div align="center">
 
-A modern, high-performance, cross-platform keyboard configuration powered by [Kanata](https://github.com/jtroo/kanata). Designed to maximize typing efficiency, eliminate pinky fatigue, and keep hands anchored to the home row at all times.
+# ⚡ Super-Keyboard: The Ultimate Ergonomic Kanata Setup
+
+**Turn any standard laptop or mechanical keyboard into a \$400 custom ergonomic powerhouse.**
+
+[![GitHub stars](https://img.shields.io/github/stars/GrvExplorer/super-keyboard?style=for-the-badge&logo=github&color=f59e0b)](https://github.com/GrvExplorer/super-keyboard/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-38bdf8?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/jtroo/kanata)
+[![Powered by Kanata](https://img.shields.io/badge/Powered%20by-Kanata%20v1.7%2B-22c55e?style=for-the-badge)](https://github.com/jtroo/kanata)
+
+<p align="center">
+  <b>No more reaching across the desk for arrow keys.</b><br>
+  <b>No more pinky gymnastics stretching for Ctrl and Alt.</b><br>
+  <b>Control your entire mouse cursor, scroll wheel, and clicks directly from your home row.</b>
+</p>
+
+[Quick Start](#-quick-start--installation) • [Layer Visuals](#-interactive-layer-visuals) • [Why This Setup?](#-why-super-keyboard) • [Configuration Reference](#-layer-walkthrough--cheat-sheet)
+
+</div>
 
 ---
 
-## 🌟 Key Highlights
+## 💡 Why Super-Keyboard?
 
-* **Home-Row Modifiers (HRM)**: `Ctrl`, `Alt`, `Shift`, and `Win`/`Cmd` accessible right beneath your home-row fingers on hold.
-* **Dual-Function Spacebar (Layer 1)**: Tap for standard `Space`; hold to unlock Vim-style arrow navigation, brackets, math symbols, numbers, and one-tap Copy/Paste.
-* **Modal Mouse Controller (Layer 2)**: Toggle hands-free mouse mode (`Space + ;`) to steer the cursor with smooth acceleration, left/right click, drag-and-drop, and scroll. Tap `;` to return to typing.
-* **Integrated Function Keys (`F1` – `F12`)**: Hold `Space` and tap top-row numbers for instant access to function keys (`F1` through `F12`) without awkward hand stretching.
-* **Dual-Trigger Function Alternative**: Includes a standalone alternate configuration (`config_dual_fn.kbd`) utilizing dual bottom-row triggers (`x` and `.`).
+Repetitive strain injury (RSI), wrist pain, and slow typing often stem from two design flaws of traditional QWERTY keyboards:
+1. **The Pinky Stretch**: Reaching down to `Ctrl` or up to `Backspace` strains the smallest finger on your hand thousands of times a day.
+2. **The Mouse & Arrow Gap**: Moving your entire right arm off the keyboard just to nudge the mouse or move the text cursor breaks your focus and typing rhythm.
+
+**Super-Keyboard solves this entirely in software using [Kanata](https://github.com/jtroo/kanata):**
+* 🧠 **Home-Row Modifiers**: System modifiers (`Ctrl`, `Alt`, `Shift`, `Win`/`Cmd`) live comfortably beneath your resting fingers on hold.
+* 🚀 **Spacebar Layer**: Holding `Space` transforms your right hand into a Vim navigation cluster and your left hand into numbers & symbols.
+* 🖱️ **Full Mouse Control**: Toggle into hands-free mouse mode (`Space + ;`) to move the cursor with smooth acceleration, left/right click, and scroll—both hands completely relaxed.
+* ⚡ **Zero Added Latency**: Fast typists type naturally with zero lag, thanks to calibrated 150ms/200ms human dwell-time heuristics.
 
 ---
 
-## 🗺️ Layer Architecture & Keyboard Maps
+## 🗺️ Interactive Layer Visuals
 
-### Layer 0: Base Layer (Home-Row Mods)
+### 1. Base Layer (Home-Row Mods)
+> **Tap** a key to type normally. **Hold** any home-row key to activate system modifiers.
 
-Tap a letter to type normally. Hold a home-row key to activate a system modifier:
+<div align="center">
+  <img src="assets/layer-0-base.svg" alt="Base Layer: Home Row Mods" width="100%">
+</div>
 
-```
-┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-│  1  │  2  │  3  │  4  │  5  │  6  │  7  │  8  │  9  │  0  │  [  │     │
-├─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────┤
-│   Q    │  W  │  E  │  R  │  T  │  Y  │  U  │  I  │  O  │  P  │        │
-├────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴────────┤
-│  Esc/Caps │  A  │  S  │  D  │  F  │  G  │  H  │  J  │  K  │  L  │  ;  │ ' │
-│   [Caps]  │ WIN │ ALT │ SHFT│ CTRL│     │     │ CTRL│ SHFT│ ALT │ WIN │   │
-├─────┬─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────┤
-│     │   Z    │  X  │  C  │  V  │  B  │  N  │  M  │  ,  │  .  │  /  │     │
-└─────┴────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
-                                 │  Space / │
-                                 │ [Layer 1]│
-                                 └──────────┘
-```
-
-| Physical Key | Tap Action | Hold Action |
+| Key | Tap | Hold (When pressed with other keys) |
 | :--- | :--- | :--- |
-| **`Caps`** | `Escape` | `Caps Lock` |
-| **`A`** / **`;`** | `a` / `;` | **Left GUI (Win/Cmd)** / **Right GUI** |
-| **`S`** / **`L`** | `s` / `l` | **Left Alt** / **Right Alt** |
-| **`D`** / **`K`** | `d` / `k` | **Left Shift** / **Right Shift** |
-| **`F`** / **`J`** | `f` / `j` | **Left Ctrl** / **Right Ctrl** |
-| **`Space`** | `Space` | **Hold $\rightarrow$ Activates Layer 1** |
+| **`Caps Lock`** | `Escape` | `Caps Lock` |
+| **`A`** &nbsp;/&nbsp; **`;`** | `a` &nbsp;/&nbsp; `;` | **Left GUI (Windows / Cmd)** &nbsp;/&nbsp; **Right GUI** |
+| **`S`** &nbsp;/&nbsp; **`L`** | `s` &nbsp;/&nbsp; `l` | **Left Alt** &nbsp;/&nbsp; **Right Alt** |
+| **`D`** &nbsp;/&nbsp; **`K`** | `d` &nbsp;/&nbsp; `k` | **Left Shift** &nbsp;/&nbsp; **Right Shift** |
+| **`F`** &nbsp;/&nbsp; **`J`** | `f` &nbsp;/&nbsp; `j` | **Left Ctrl** &nbsp;/&nbsp; **Right Ctrl** |
+| **`Spacebar`** | `Space` | **Hold $\rightarrow$ Activates Layer 1 (Navigation & Numbers)** |
 
 ---
 
-### Layer 1: Navigation, Numbers & Symbols (Space Held)
+### 2. Layer One: No More Pinky Keys
+> Hold **`Spacebar`** to activate. Gives instant access to Vim arrows, brackets, math symbols, numbers, and Function keys (`F1`–`F12`).
 
-Hold **`Space`** to transform the keyboard into a productivity console:
+<div align="center">
+  <img src="assets/layer-1-space.svg" alt="Layer One: Navigation, Numbers & F-Keys" width="100%">
+</div>
 
-```
-┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-│ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │ F11 │     │
-├─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────┤
-│   9    │  0  │ Esc │  ;  │ Home│ End │  [  │  ]  │  -  │  =  │        │
-├────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴────────┤
-│ Enter/Caps│  1  │  2  │  3  │  4  │  5  │ Left│ Down│ Up  │Right│ Mouse│F12 │
-│           │     │     │     │     │Enter│  ◄   │  ▼  │  ▲  │  ►  │ Mode │    │
-├─────┬─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────┤
-│     │        │     │Copy │Paste│ Bksp│ Del │  M  │     │     │     │     │
-│     │        │     │CtrlC│CtrlV│     │     │     │     │     │     │     │
-└─────┴────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
-                                 │ Backspace│
-                                 └──────────┘
-```
-
-#### Key Bindings Summary:
-* **Vim Navigation Arrows**: `H` (Left), `J` (Down), `K` (Up), `L` (Right).
-* **Editing Shortcuts**:
+* **Vim Navigation**: `H` (Left ◄), `J` (Down ▼), `K` (Up ▲), `L` (Right ►).
+* **Navigation Extremes**: `T` $\rightarrow$ **Home**, `Y` $\rightarrow$ **End**, `E` $\rightarrow$ **Escape**.
+* **Brackets & Symbols**: `U` $\rightarrow$ `[`, `I` $\rightarrow$ `]`, `O` $\rightarrow$ `-`, `P` $\rightarrow$ `=`.
+* **One-Tap Editing**:
   * `C` $\rightarrow$ **Copy** (`Ctrl + C`)
   * `V` $\rightarrow$ **Paste** (`Ctrl + V`)
   * `B` $\rightarrow$ **Backspace**
   * `N` $\rightarrow$ **Delete**
-  * `E` $\rightarrow$ **Escape**
-  * `T` / `Y` $\rightarrow$ **Home** / **End**
-* **Brackets & Math**:
-  * `U` $\rightarrow$ `[` &nbsp;|&nbsp; `I` $\rightarrow$ `]` &nbsp;|&nbsp; `O` $\rightarrow$ `-` &nbsp;|&nbsp; `P` $\rightarrow$ `=`
-* **Left-Hand Numbers**: `A` (1), `S` (2), `D` (3), `F` (4), `G` (5).
-* **Function Keys (`F1` – `F12`)**:
-  * Top numbers `1` – `0` $\rightarrow$ `F1` – `F10`
-  * `[` $\rightarrow$ `F11` (Fullscreen)
-  * `'` $\rightarrow$ `F12` (Inspect / Developer Tools)
-* **Mouse Layer Toggle**: Tap **`;`** while holding `Space` to enter **Layer 2 (Mouse Mode)**.
+* **Instant Function Row (`F1` – `F12`)**:
+  * `Space + 1` through `Space + 0` $\rightarrow$ **`F1` through `F10`**
+  * `Space + [` $\rightarrow$ **`F11`** (Fullscreen toggle)
+  * `Space + '` $\rightarrow$ **`F12`** (Inspect / DevTools)
+* **Enter Mouse Mode**: Tap **`;`** while holding `Space` to switch into **Layer 2 (Mouse Mode)**.
 
 ---
 
-### Layer 2: Modal Mouse Controller (Hands-Free Mouse Mode)
+### 3. Layer Two: Use the Mouse!
+> Enter with **`Space + ;`**. Once entered, you can let go of all keys—your hands are completely free to navigate without holding any buttons.
 
-Enter with **`Space + ;`**. Once entered, release all keys; both hands are completely free to navigate without holding any modifiers.
+<div align="center">
+  <img src="assets/layer-2-mouse.svg" alt="Layer Two: Hands-Free Mouse Controller" width="100%">
+</div>
 
-```
-┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-│     │     │     │     │     │     │     │     │     │     │     │     │
-├─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────┤
-│        │WhlUp│Up ▲ │WhlDn│     │     │     │     │     │     │        │
-├────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴────────┤
-│           │     │Lft ◄│Dn ▼ │Rgt ►│     │MidClk│L-Clk│R-Clk│     │ EXIT │   │
-│           │     │     │     │     │     │      │     │     │     │ (;)  │   │
-├─────┬─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────┤
-│     │        │     │Copy │Paste│ Bksp│ Del │  M  │     │     │     │     │
-│     │        │     │CtrlC│CtrlV│     │     │     │     │     │     │     │
-└─────┴────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
-```
-
-#### Mouse Controls:
-* **Cursor Steering (Left Hand inverted-T)**:
-  * `E` $\rightarrow$ Up
-  * `S` $\rightarrow$ Left
-  * `D` $\rightarrow$ Down
-  * `F` $\rightarrow$ Right
-  *(Configured with smooth linear acceleration for pixel-level precision and rapid screen transit)*.
-* **Clicks & Dragging (Right Hand)**:
-  * `J` $\rightarrow$ **Left Click** (`mlft`) — hold down to drag-and-drop or select text.
-  * `K` $\rightarrow$ **Right Click** (`mrgt`).
-  * `H` $\rightarrow$ **Middle Click** (`mmid`).
+* **Smooth Cursor Acceleration (Left Hand Inverted-T)**:
+  * `E` $\rightarrow$ Cursor Up ▲
+  * `S` $\rightarrow$ Cursor Left ◄
+  * `D` $\rightarrow$ Cursor Down ▼
+  * `F` $\rightarrow$ Cursor Right ►
+* **Mouse Clicks & Dragging (Right Hand)**:
+  * `J` $\rightarrow$ **Left Click** (`mlft`) — *hold down to select text or drag windows*
+  * `K` $\rightarrow$ **Right Click** (`mrgt`)
+  * `H` $\rightarrow$ **Middle Click** (`mmid`)
 * **Scroll Wheel**:
-  * `W` $\rightarrow$ Scroll Up
-  * `R` $\rightarrow$ Scroll Down
-* **Quick Text Actions**:
-  * `C` $\rightarrow$ Copy (`Ctrl + C`)
-  * `V` $\rightarrow$ Paste (`Ctrl + V`)
-  * `N` $\rightarrow$ Delete (`del`)
-  * `B` $\rightarrow$ Backspace (`bspc`)
+  * `W` $\rightarrow$ Wheel Up
+  * `R` $\rightarrow$ Wheel Down
+* **Inline Clipboard Actions**:
+  * `C` $\rightarrow$ **Copy** (`Ctrl + C`)
+  * `V` $\rightarrow$ **Paste** (`Ctrl + V`)
+  * `N` $\rightarrow$ **Delete**
+  * `B` $\rightarrow$ **Backspace**
 * **Exit Mouse Mode**:
-  * Tap **`;`** to immediately return to **Layer 0 (Base)**.
+  * Tap **`;`** to return immediately to **Layer 0 (Base)**.
 
 ---
 
-## 💻 How to Install Kanata
+## 💻 Quick Start & Installation
 
-### 🪟 Windows Installation
+### 🪟 Windows Setup
 
-#### Method 1: Direct Binary Download (Recommended)
-1. Download the latest release binary `kanata.exe` from the [official Kanata Releases page](https://github.com/jtroo/kanata/releases).
-2. Place `kanata.exe` in a convenient directory (e.g. `C:\kanata` or `E:\kanata`).
-3. Add that directory to your system `PATH` so `kanata` can be called from any terminal.
+#### 1. Install Kanata
+* **Via Winget / Scoop (Fastest)**:
+  ```powershell
+  winget install jtroo.kanata
+  # or
+  scoop install kanata
+  ```
+* **Or Manual Download**:
+  Download `kanata.exe` from the [official Kanata Releases](https://github.com/jtroo/kanata/releases) and place it in your `PATH` or folder (e.g. `C:\kanata`).
 
-*(Note: The standard Windows binary uses low-level hooks (`LLHOOK` + `SendInput`) and works out of the box with zero extra drivers).*
-
-#### Method 2: Package Managers
+#### 2. Clone the Super-Keyboard Config
 ```powershell
-# Using Winget
-winget install jtroo.kanata
-
-# Or using Scoop
-scoop bucket add extras
-scoop install kanata
+git clone https://github.com/GrvExplorer/super-keyboard.git "$HOME\.config\kanata"
 ```
 
+#### 3. Test & Run
+```powershell
+# Validate syntax
+kanata --check -c "$HOME\.config\kanata\config.kbd"
+
+# Run Kanata
+kanata -c "$HOME\.config\kanata\config.kbd"
+```
+
+#### 4. Auto-Start in Background (Headless)
+To run silently on Windows login without an open command prompt:
+1. Open **Task Scheduler** (`Win + R` $\rightarrow$ `taskschd.msc`).
+2. Create Task:
+   * **Name**: `run kanata`
+   * **Triggers**: *At log on of any user*
+   * **Action**:
+     * Program: `conhost`
+     * Arguments: `--headless kanata -c "C:\Users\<YourUser>\.config\kanata\config.kbd"`
+   * **Conditions**: Uncheck *Stop if computer switches to battery power*.
+
 ---
 
-### 🍏 macOS Installation
+### 🍏 macOS Setup
 
-Kanata requires the virtual keyboard driver from Karabiner to inject keypresses on macOS.
+Kanata leverages the Karabiner VirtualHIDDevice driver to inject virtual keypresses on macOS.
 
-#### 1. Install Driver and Kanata via Homebrew
+#### 1. Install via Homebrew
 ```bash
-# Install Karabiner VirtualHIDDevice driver
+# 1. Install driver
 brew install --cask karabiner-elements
 
-# Install Kanata
+# 2. Install Kanata
 brew install kanata
 ```
 
-#### 2. Grant macOS System Permissions
-1. Open **System Settings** $\rightarrow$ **Privacy & Security**.
-2. Under **Input Monitoring**, enable **kanata** (or your terminal application).
+#### 2. Grant macOS Accessibility Permissions
+1. Go to **System Settings** $\rightarrow$ **Privacy & Security**.
+2. Under **Input Monitoring**, enable **kanata** (or your Terminal / iTerm2).
 3. Under **Accessibility**, enable **kanata**.
 
-#### 3. Run Kanata
-On macOS, Kanata requires root privileges to grab raw keyboard devices:
+#### 3. Clone & Run
 ```bash
+git clone https://github.com/GrvExplorer/super-keyboard.git ~/.config/kanata
+
+# Run (requires sudo on macOS for keyboard grabbing)
 sudo kanata -c ~/.config/kanata/config.kbd
 ```
 
-To auto-start Kanata on login as a system daemon:
+To run as an automatic background service on macOS:
 ```bash
 sudo brew services start kanata
 ```
 
 ---
 
-## 📦 How to Use This Configuration
+## ⚙️ Ergonomic Tuning (`defvar`)
 
-### 1. Clone this Repository
-```bash
-# macOS / Linux default config directory
-git clone https://github.com/GrvExplorer/super-keyboard.git ~/.config/kanata
-
-# Windows default config directory
-git clone https://github.com/GrvExplorer/super-keyboard.git "$HOME\.config\kanata"
-```
-
-### 2. Validate the Configuration
-Run Kanata in validation mode to verify syntax:
-```bash
-kanata --check -c ~/.config/kanata/config.kbd
-```
-
-### 3. Start Kanata
-```bash
-# Windows
-kanata -c "C:\Users\<YourUser>\.config\kanata\config.kbd"
-
-# macOS
-sudo kanata -c ~/.config/kanata/config.kbd
-```
-
----
-
-## 📁 Configuration Flavors
-
-* **`config.kbd` (Active Default)**: Option B layout. Places `F1`–`F12` directly on the physical number row while holding `Space`.
-* **`config_dual_fn.kbd` (Alternate)**: Option A layout. Features a dedicated Layer 3 activated by dual triggers: holding `x` (left hand) or holding `.` (right hand).
-
----
-
-## ⚙️ Timing Variables (`defvar`)
-
-Calibrated for natural human keystroke ergonomics (average typing dwell time is ~70–120ms):
+Every delay and acceleration curve in this configuration is finely tuned for human typing mechanics:
 
 ```lisp
 (defvar
-  tap-time 150   ;; Double-tap window for repeating the tap action (ms)
-  hold-time 200  ;; Hold duration required to activate modifiers/layers (ms)
-  long-time 250  ;; Extended hold time for outer fingers (Ring/Pinky)
+  tap-time 150   ;; 150ms: Quick double-tap window for repeating alpha characters
+  hold-time 200  ;; 200ms: Ergonomic hold threshold before modifiers/layers activate
+  long-time 250  ;; 250ms: Slightly longer dwell for weaker outer fingers (pinky/ring)
 
-  ;; Mouse movement acceleration
-  ms-t 10        ;; Interval between mouse movements (ms)
-  ms-at 800      ;; Duration to linearly ramp up to max speed (ms)
-  ms-min 3       ;; Starting speed (pixels)
-  ms-max 25      ;; Maximum transit speed (pixels)
+  ;; Mouse cursor acceleration
+  ms-t 10        ;; 10ms update interval for butter-smooth 100fps motion
+  ms-at 800      ;; 800ms linear acceleration ramp
+  ms-min 3       ;; 3px initial precision speed (pixel-perfect targeting)
+  ms-max 25      ;; 25px max transit speed (lightning-fast multi-monitor crossing)
 
   ;; Mouse scroll wheel
-  scr-t 50       ;; Scroll event interval (ms)
-  scr-d 120      ;; Distance per notch (120 is 1 Windows notch)
+  scr-t 50       ;; Scroll interval
+  scr-d 120      ;; 120 units = 1 standard mouse wheel detent
 )
 ```
 
 ---
 
-## 🚀 Windows Auto-Start Setup (Headless)
+## 🛑 Emergency Kill-Switch
 
-To run Kanata silently in the background on Windows startup without a console window:
-
-1. Open **Task Scheduler** (`taskschd.msc`).
-2. Create a new task named **`run kanata`**:
-   * **General**: Check *Run only when user is logged on*.
-   * **Triggers**: *At log on of any user*.
-   * **Actions**:
-     * **Program/script**: `conhost`
-     * **Arguments**: `--headless kanata -c "E:\kanata\.config\kanata\config.kbd"`
-   * **Conditions**: Uncheck *Stop if the computer switches to battery power*.
+If you ever need to stop Kanata immediately and restore stock keyboard behavior:
+* Press **`Left Control + Space + Escape`** simultaneously.
 
 ---
 
-## 🛑 Emergency Exit
+## 🤝 Contributing & Community
 
-Kanata has a built-in safety combo to terminate immediately:
-* Press **`Left Control + Space + Escape`** simultaneously to exit Kanata and restore default keyboard behavior.
+Contributions, bug reports, and layout suggestions are warmly welcome!
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/cool-layer`)
+3. Commit your Changes (`git commit -m 'Add new symbol macro'`)
+4. Push to the Branch (`git push origin feature/cool-layer`)
+5. Open a Pull Request
 
 ---
 
-## 👤 Author & Acknowledgments
+## 📜 License & Credits
 
+* Distributed under the **MIT License**. See `LICENSE` for details.
 * Created and maintained by **Gaurav Verma** ([@GrvExplorer](https://github.com/GrvExplorer)).
-* Inspired by the ergonomic concepts in [tannerr-dev/kanata-config](https://github.com/tannerr-dev/kanata-config) and [jtroo/kanata](https://github.com/jtroo/kanata).
+* Special credit to [jtroo/kanata](https://github.com/jtroo/kanata) for the incredible engine and [tannerr-dev/kanata-config](https://github.com/tannerr-dev/kanata-config) for initial layer inspiration.
