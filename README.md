@@ -170,14 +170,66 @@ brew install kanata
 ```bash
 git clone https://github.com/GrvExplorer/super-keyboard.git ~/.config/kanata
 
-# Run (requires sudo on macOS for keyboard grabbing)
+# Test / Validate syntax
+kanata --check -c ~/.config/kanata/config.kbd
+
+# Run directly (requires sudo on macOS for low-level device access)
 sudo kanata -c ~/.config/kanata/config.kbd
 ```
 
-To run as an automatic background service on macOS:
+#### 4. Auto-Start on Boot / Login (macOS)
+
+Because Kanata requires root privileges to grab raw keyboard devices, choose either of the following setup options:
+
+##### Option A: Homebrew Services (Recommended & Easiest)
+If you installed Kanata via Homebrew, run:
 ```bash
+# Start background service and enable launch on system boot
 sudo brew services start kanata
 ```
+*(To stop the background service: `sudo brew services stop kanata`)*
+
+##### Option B: Custom `launchd` LaunchDaemon (Manual Binary / High Reliability)
+If you installed the binary manually or prefer a standalone native daemon:
+
+1. Create a `launchd` service file:
+```bash
+sudo tee /Library/LaunchDaemons/com.kanata.daemon.plist << 'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kanata.daemon</string>
+    <key>ProgramArguments</key>
+    <array>
+        <!-- Use /opt/homebrew/bin/kanata on Apple Silicon or /usr/local/bin/kanata on Intel -->
+        <string>/opt/homebrew/bin/kanata</string>
+        <string>-c</string>
+        <string>/Users/YOUR_USERNAME/.config/kanata/config.kbd</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Library/Logs/kanata.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Library/Logs/kanata.err.log</string>
+</dict>
+</plist>
+EOF
+```
+*(Make sure to replace `/Users/YOUR_USERNAME/` with your actual macOS user home folder path).*
+
+2. Register and start the daemon:
+```bash
+sudo chown root:wheel /Library/LaunchDaemons/com.kanata.daemon.plist
+sudo chmod 644 /Library/LaunchDaemons/com.kanata.daemon.plist
+sudo launchctl load -w /Library/LaunchDaemons/com.kanata.daemon.plist
+```
+*(To stop and unload the daemon: `sudo launchctl unload -w /Library/LaunchDaemons/com.kanata.daemon.plist`)*
+
 
 ---
 
