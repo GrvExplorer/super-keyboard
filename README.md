@@ -100,8 +100,9 @@ Repetitive strain injury (RSI), wrist pain, and slow typing often stem from two 
 * **Inline Clipboard Actions**:
   * `C` $\rightarrow$ **Copy** (`Ctrl + C`)
   * `V` $\rightarrow$ **Paste** (`Ctrl + V`)
-  * `N` $\rightarrow$ **Delete**
   * `B` $\rightarrow$ **Backspace**
+  * `N` $\rightarrow$ **Delete**
+  * `M` $\rightarrow$ **Copy** (`Ctrl + C`)
 * **Exit Mouse Mode**:
   * Tap **`;`** to return immediately to **Layer 0 (Base)**.
 
