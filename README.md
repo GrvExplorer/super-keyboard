@@ -7,7 +7,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/GrvExplorer/super-keyboard?style=for-the-badge&logo=github&color=f59e0b)](https://github.com/GrvExplorer/super-keyboard/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-38bdf8?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/jtroo/kanata)
-[![Powered by Kanata](https://img.shields.io/badge/Powered%20by-Kanata%20v1.7%2B-22c55e?style=for-the-badge)](https://github.com/jtroo/kanata)
+[![Kanata Version](https://img.shields.io/badge/Kanata-v1.12.0%20(Latest)%20%7C%20v1.7%2B-22c55e?style=for-the-badge&logo=rust)](https://github.com/jtroo/kanata/releases)
 
 <p align="center">
   <b>No more reaching across the desk for arrow keys.</b><br>
@@ -110,17 +110,26 @@ Repetitive strain injury (RSI), wrist pain, and slow typing often stem from two 
 
 ## 💻 Quick Start & Installation
 
+> [!IMPORTANT]
+> **Recommended Version: Kanata `v1.12.0` (Latest) or `v1.7.0+`**
+> Super-Keyboard is tested, validated, and optimized for **Kanata v1.12.0** (the latest official release). For smooth mouse cursor acceleration, calibrated tap-hold response times, and rock-solid stability, ensure you are running **Kanata v1.12.0** or newer.
+
 ### 🪟 Windows Setup
 
-#### 1. Install Kanata
+#### 1. Install Kanata (`v1.12.0` Recommended)
 * **Via Winget / Scoop (Fastest)**:
   ```powershell
   winget install jtroo.kanata
   # or
   scoop install kanata
   ```
-* **Or Manual Download**:
-  Download `kanata.exe` from the [official Kanata Releases](https://github.com/jtroo/kanata/releases) and place it in your `PATH` or folder (e.g. `C:\kanata`).
+* **Or Direct Download (Latest v1.12.0)**:
+  Download the latest Windows binary package (`windows-binaries-x64.zip`) from [Kanata GitHub Releases](https://github.com/jtroo/kanata/releases/tag/v1.12.0). Extract `kanata_windows_tty_winIOv2_x64.exe`, rename it to `kanata.exe`, and place it in your `PATH` or folder (e.g. `C:\kanata` or `E:\kanata`).
+* **Verify Version**:
+  ```powershell
+  kanata --version
+  # Output: kanata 1.12.0 (or v1.7.0+)
+  ```
 
 #### 2. Clone the Super-Keyboard Config
 ```powershell
@@ -158,8 +167,12 @@ Kanata leverages the Karabiner VirtualHIDDevice driver to inject virtual keypres
 # 1. Install driver
 brew install --cask karabiner-elements
 
-# 2. Install Kanata
+# 2. Install Kanata (Installs the latest v1.12.0)
 brew install kanata
+
+# 3. Verify version
+kanata --version
+# Output: kanata 1.12.0
 ```
 
 #### 2. Grant macOS Accessibility Permissions
