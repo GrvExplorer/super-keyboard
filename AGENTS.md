@@ -14,21 +14,22 @@
    - Right hand: `J` (Ctrl), `K` (Shift), `L` (Alt), `;` (Win / Cmd)
    - Spacebar: Tap for `Space`, Hold to activate **Layer 1**
    - CapsLock: Tap for `Escape`, Hold for `CapsLock`
-2. **Layer 1 (Vim Navigation, Numbers & Dual-Action Home-Row Mods)**:
+2. **Layer 1 (Vim Navigation, Numbers & Bilateral Home-Row Mods)**:
    - Activated momentarily while holding **`Spacebar`**.
-   - Left hand numbers: `A` (1), `S` (2), `D` (3), `F` (4), `G` (5), `Q` (9), `W` (0).
-   - Left hand dual-action home-row mods on hold: `A` (Win), `S` (Alt), `D` (Shift), `F` (Ctrl).
-   - Right hand Vim navigation: `H` (Left), `J` (Down), `K` (Up), `L` (Right).
+   - Left hand numbers on tap: `A` (1), `S` (2), `D` (3), `F` (4), `G` (5), `Q` (9), `W` (0).
+   - Left hand home-row mods on hold: `A` (Win), `S` (Alt), `D` (Shift), `F` (Ctrl), `G` (Enter).
+   - Right hand Vim navigation on tap: `H` (Left), `J` (Down), `K` (Up), `L` (Right).
+   - Right hand home-row mods on hold: `J` (Ctrl), `K` (Shift), `L` (Alt), `;` (Win / Super).
    - Navigation extremes: `T` (Home), `Y` (End), `E` (Escape).
    - Function row: `1`–`0` $\rightarrow$ `F1`–`F10`, `[` $\rightarrow$ `F11`, `'` $\rightarrow$ `F12`.
-   - One-tap clipboard: `C` (Ctrl+C), `V` (Ctrl+V), `B` (Backspace), `N` (Delete), `M` (Ctrl+C).
+   - Complete clipboard suite: `X` (Cut / Ctrl+X), `C` (Copy / Ctrl+C), `V` (Paste / Ctrl+V), `B` (Backspace), `N` (Delete), `M` (Copy).
    - Switch to Mouse Mode: Tap **`;`** while holding `Space`.
 3. **Layer 2 (Hands-Free Modal Mouse Controller)**:
    - Toggled via `Space + ;`. Persistent—hands rest freely with zero buttons held.
    - Cursor movement: Inverted-T on left hand: `E` (Up), `S` (Left), `D` (Down), `F` (Right).
    - Mouse buttons: Right hand: `J` (Left Click), `K` (Right Click), `H` (Middle Click).
    - Scroll wheel: `W` (Wheel Down), `R` (Wheel Up).
-   - Clipboard: `C` (Copy), `V` (Paste), `B` (Backspace), `N` (Delete), `M` (Copy).
+   - Clipboard: `X` (Cut), `C` (Copy), `V` (Paste), `B` (Backspace), `N` (Delete), `M` (Copy).
    - Exit back to Base: Tap **`;`**.
 
 ---
@@ -161,7 +162,7 @@ To prevent accidental modifier triggers during fast typing:
   - `'` $\rightarrow$ `&apos;`
 * GitHub Camo and web browsers reject SVGs with XML parsing errors. Always validate with `xml.etree.ElementTree.parse(svg_path)` before committing.
 
-### ⚠️ Edge Case 5: Dual-Hand Modifiers vs Vim Navigation Repeat
-* On Layer 1, Left Hand keys (`A, S, D, F`) are tap-hold modifiers (`Win, Alt, Shift, Ctrl`).
-* Right Hand keys (`H, J, K, L`) are **pure navigation keys** (`left, down, up, rght`).
-* **Do NOT turn `H, J, K, L` into tap-holds on Layer 1**, as doing so breaks long-press continuous arrow repeat (scrolling down a document by holding `J`).
+### ⚠️ Edge Case 5: Bilateral Home-Row Mods & Vim Navigation Timing
+* On Layer 1, both Left Hand (`A, S, D, F, G`) and Right Hand (`J, K, L, ;`) feature dual-role home-row mods.
+* Rapid taps output the underlying navigation or number key, while intentional holds trigger the system modifier (`Ctrl`, `Shift`, `Alt`, `Win`, `Enter`).
+* Calibrated timings (`tap-time 150`, `hold-time 200`, Shift `150 140`) ensure that quick sequential keystrokes do not misfire as modifiers.

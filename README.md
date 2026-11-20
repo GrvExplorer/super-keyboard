@@ -62,14 +62,19 @@ Repetitive strain injury (RSI), wrist pain, and slow typing often stem from two 
   <img src="assets/layer-1-space.svg" alt="Layer One: Navigation, Numbers & F-Keys" width="860">
 </p>
 
-* **Vim Navigation**: `H` (Left ◄), `J` (Down ▼), `K` (Up ▲), `L` (Right ►).
-* **Dual-Action Home-Row Mods & Numbers (Left Hand)**:
-  * Tap to type numbers directly from the home row; hold to trigger modifiers for instant dual-hand navigation combos:
+* **Bilateral Home-Row Mods on Layer 1**:
+  * **Left Hand (Numbers on Tap & Modifiers on Hold)**:
     * `A` $\rightarrow$ **Tap `1`** &nbsp;|&nbsp; **Hold `Left GUI (Win / Cmd)`**
     * `S` $\rightarrow$ **Tap `2`** &nbsp;|&nbsp; **Hold `Left Alt`**
     * `D` $\rightarrow$ **Tap `3`** &nbsp;|&nbsp; **Hold `Left Shift`**
     * `F` $\rightarrow$ **Tap `4`** &nbsp;|&nbsp; **Hold `Left Ctrl`**
     * `G` $\rightarrow$ **Tap `5`** &nbsp;|&nbsp; **Hold `Enter`**
+  * **Right Hand (Vim Navigation on Tap & Modifiers on Hold)**:
+    * `H` $\rightarrow$ **`Left ◄`**
+    * `J` $\rightarrow$ **Tap `Down ▼`** &nbsp;|&nbsp; **Hold `Right Ctrl`**
+    * `K` $\rightarrow$ **Tap `Up ▲`** &nbsp;|&nbsp; **Hold `Right Shift`**
+    * `L` $\rightarrow$ **Tap `Right ►`** &nbsp;|&nbsp; **Hold `Right Alt`**
+    * `;` $\rightarrow$ **Tap `Layer 2 (Mouse Mode)`** &nbsp;|&nbsp; **Hold `Right GUI (Win / Cmd)`**
   * **Powerful Navigation Combos** (while holding `Space`):
     * `Hold D + J` $\rightarrow$ **`Shift + Down`** (Select lines downwards)
     * `Hold F + L` $\rightarrow$ **`Ctrl + Right`** (Jump forward by word)
@@ -79,11 +84,13 @@ Repetitive strain injury (RSI), wrist pain, and slow typing often stem from two 
     * `Hold S + J / K` $\rightarrow$ **`Alt + Down / Up`** (Move line up/down in code editors)
 * **Navigation Extremes**: `T` $\rightarrow$ **Home**, `Y` $\rightarrow$ **End**, `E` $\rightarrow$ **Escape**.
 * **Brackets & Symbols**: `U` $\rightarrow$ `[`, `I` $\rightarrow$ `]`, `O` $\rightarrow$ `-`, `P` $\rightarrow$ `=`.
-* **One-Tap Editing**:
+* **Complete One-Tap Clipboard Suite**:
+  * `X` $\rightarrow$ **Cut** (`Ctrl + X`)
   * `C` $\rightarrow$ **Copy** (`Ctrl + C`)
   * `V` $\rightarrow$ **Paste** (`Ctrl + V`)
   * `B` $\rightarrow$ **Backspace**
   * `N` $\rightarrow$ **Delete**
+  * `M` $\rightarrow$ **Copy** (`Ctrl + C`)
 * **Instant Function Row (`F1` – `F12`)**:
   * `Space + 1` through `Space + 0` $\rightarrow$ **`F1` through `F10`**
   * `Space + [` $\rightarrow$ **`F11`** (Fullscreen toggle)
@@ -112,6 +119,7 @@ Repetitive strain injury (RSI), wrist pain, and slow typing often stem from two 
   * `W` $\rightarrow$ Wheel Up
   * `R` $\rightarrow$ Wheel Down
 * **Inline Clipboard Actions**:
+  * `X` $\rightarrow$ **Cut** (`Ctrl + X`)
   * `C` $\rightarrow$ **Copy** (`Ctrl + C`)
   * `V` $\rightarrow$ **Paste** (`Ctrl + V`)
   * `B` $\rightarrow$ **Backspace**

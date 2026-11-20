@@ -7,7 +7,7 @@
   1    2    3    4    5    6    7    8    9    0    [
   q    w    e    r    t    y    u    i    o    p
   caps a    s    d    f    g    h    j    k    l    ;    '
-  c    v    b    n    m    spc
+  x    c    v    b    n    m    spc
 )
 
 (defvirtualkeys
@@ -54,14 +54,15 @@
   s1    (tap-hold $tap-time $hold-time 2 lalt)
   d1    (tap-hold 150 140 3 lshift)
   f1    (tap-hold $tap-time $hold-time 4 lctrl)
-  g1    (tap-hold $tap-time $hold-time 5 ret)
-  h1    (tap-hold $tap-time $hold-time left left)
-  j1    (tap-hold $tap-time $hold-time down down) 
-  k1    (tap-hold $tap-time $hold-time up up)
-  l1    (tap-hold $tap-time $long-time rght rght)
-  
   ;; Space + ; in Layer One switches to layer-two (Mouse Layer)
   to-l2 (layer-switch layer-two)
+
+  g1    (tap-hold $tap-time $hold-time 5 ret)
+  h1    (tap-hold $tap-time $hold-time left left)
+  j1    (tap-hold $tap-time $hold-time down rctl) 
+  k1    (tap-hold 150 140 up rshift)
+  l1    (tap-hold $tap-time $hold-time rght ralt)
+  ;1    (tap-hold $tap-time $hold-time @to-l2 rmet)
   
   spc1  (tap-hold $tap-time $hold-time bspc bspc)
 
@@ -76,11 +77,12 @@
   o1    (tap-hold $tap-time $hold-time min min)
   p1    (tap-hold $tap-time $hold-time eql eql)
 
+  x1    C-x
   c1    C-c
   v1    C-v
   b1    bspc
   n1    del
-  m1    m
+  m1    C-c
 
   ;; ==========================================
   ;; Layer Two aliases (Mouse Layer)
@@ -103,19 +105,19 @@
   1    2    3    4    5    6    7    8    9    0    [
   q    w    e    r    t    y    u    i    o    p
   @esccaps @almet @salt @dshift @fctrl g h @jctrl @kshift @lalt @;lmet '
-  c    v    b    n    m    @spc
+  x    c    v    b    n    m    @spc
 )
 
 (deflayer layer-one
   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11
   @q1  @w1  @e1  @r1  @t1  @y1  @u1  @i1  @o1  @p1
-  @caps1 @a1 @s1 @d1 @f1 @g1 @h1 @j1 @k1 @l1 @to-l2 f12
-  @c1  @v1  @b1  @n1  @m1  @spc1
+  @caps1 @a1 @s1 @d1 @f1 @g1 @h1 @j1 @k1 @l1 @;1 f12
+  @x1  @c1  @v1  @b1  @n1  @m1  @spc1
 )
 
 (deflayer layer-two
   _    _    _    _    _    _    _    _    _    _    _
   _    @m-whu @m-up @m-whd _   _    _    _    _    _
   _    _    @m-left @m-down @m-rght _ mmid mlft mrgt _ @to-base _
-  @c1  @v1  bspc @n1  @m1  _
+  @x1  @c1  @v1  bspc @n1  @m1  _
 )
