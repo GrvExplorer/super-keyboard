@@ -63,6 +63,20 @@ Repetitive strain injury (RSI), wrist pain, and slow typing often stem from two 
 </p>
 
 * **Vim Navigation**: `H` (Left ◄), `J` (Down ▼), `K` (Up ▲), `L` (Right ►).
+* **Dual-Action Home-Row Mods & Numbers (Left Hand)**:
+  * Tap to type numbers directly from the home row; hold to trigger modifiers for instant dual-hand navigation combos:
+    * `A` $\rightarrow$ **Tap `1`** &nbsp;|&nbsp; **Hold `Left GUI (Win / Cmd)`**
+    * `S` $\rightarrow$ **Tap `2`** &nbsp;|&nbsp; **Hold `Left Alt`**
+    * `D` $\rightarrow$ **Tap `3`** &nbsp;|&nbsp; **Hold `Left Shift`**
+    * `F` $\rightarrow$ **Tap `4`** &nbsp;|&nbsp; **Hold `Left Ctrl`**
+    * `G` $\rightarrow$ **Tap `5`** &nbsp;|&nbsp; **Hold `Enter`**
+  * **Powerful Navigation Combos** (while holding `Space`):
+    * `Hold D + J` $\rightarrow$ **`Shift + Down`** (Select lines downwards)
+    * `Hold F + L` $\rightarrow$ **`Ctrl + Right`** (Jump forward by word)
+    * `Hold F + D + L` $\rightarrow$ **`Ctrl + Shift + Right`** (Select entire word right)
+    * `Hold A + H / L` $\rightarrow$ **`Win + Left / Right`** (Snap active window to split screen)
+    * `Hold A + K` $\rightarrow$ **`Win + Up`** (Maximize window)
+    * `Hold S + J / K` $\rightarrow$ **`Alt + Down / Up`** (Move line up/down in code editors)
 * **Navigation Extremes**: `T` $\rightarrow$ **Home**, `Y` $\rightarrow$ **End**, `E` $\rightarrow$ **Escape**.
 * **Brackets & Symbols**: `U` $\rightarrow$ `[`, `I` $\rightarrow$ `]`, `O` $\rightarrow$ `-`, `P` $\rightarrow$ `=`.
 * **One-Tap Editing**:
