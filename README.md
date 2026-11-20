@@ -15,7 +15,7 @@
   <b>Control your entire mouse cursor, scroll wheel, and clicks directly from your home row.</b>
 </p>
 
-[Quick Start](#-quick-start--installation) • [Layer Visuals](#-interactive-layer-visuals) • [Why This Setup?](#-why-super-keyboard) • [Configuration Reference](#-layer-walkthrough--cheat-sheet)
+[Quick Start](#-quick-start--installation) • [Layer Visuals](#-interactive-layer-visuals) • [Why This Setup?](#-why-super-keyboard) • [Configuration Reference](#-layer-walkthrough--cheat-sheet) • [AI Agents Guide](AGENTS.md)
 
 </div>
 
@@ -300,6 +300,18 @@ Contributions, bug reports, and layout suggestions are warmly welcome!
 3. Commit your Changes (`git commit -m 'Add new symbol macro'`)
 4. Push to the Branch (`git push origin feature/cool-layer`)
 5. Open a Pull Request
+
+---
+
+## 🤖 Using with AI Agents & Automation
+
+If you are using an AI coding assistant (**Antigravity**, **Claude Code**, **Cursor**, **GitHub Copilot**, **OpenCode**, **Aider**, etc.) to set up, extend, or adapt this configuration to your local machine, share this repository or point your agent directly to [`AGENTS.md`](AGENTS.md).
+
+It contains comprehensive, machine-readable instructions covering:
+* **Target Config Paths**: Deterministic path discovery across Windows (`$HOME\.config\kanata\`), macOS, and Linux.
+* **Pre-flight Syntax Validation**: Always verifying with `kanata --check -c <path>` before applying changes.
+* **Safe Service Reload Protocol**: Clean process termination and background service restart procedures.
+* **Troubleshooting & Edge Cases**: PowerShell variable expansion quirks, driver selections (`winIOv2` vs `wintercept`), macOS Privacy & Input Monitoring permissions, and XML-safe asset regeneration.
 
 ---
 
